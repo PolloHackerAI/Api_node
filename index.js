@@ -1,14 +1,12 @@
-const http = require('http');
+import express from "express"
 
-const hostname = '127.0.0.1';
-const port = 3000;
-
-const server = http.createServer((req, res) => {
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/plain');
-    res.end('Hello, World!\n');
-});
-
-server.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}/`);
-}); // commento di prova 4 vitali e' un bravo ragazzo
+const app = express(); //  init dell oggetto 
+const port = 3000;  // init della porta
+// Definisco una rotta su express 
+app.get('/' , (req,res) => {
+    res.send("ciao da Express!");
+})
+// Definisco su quale porta deve ascoltare, nella funzione freccia ho inserito un log per debug
+app.listen(port,() => {
+    console.log("porta:" + port);
+})
