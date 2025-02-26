@@ -1,0 +1,23 @@
+{
+  "name": "api_node",
+  "version": "1.0.0",
+  "description": "piccolo server con express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js && echo \"Avviato con successo\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PolloHackerAI/Api_node.git"
+  },
+  "author": "Michael_Tranchino_Simone_Vitali",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PolloHackerAI/Api_node/issues"
+  },
+  "homepage": "https://github.com/PolloHackerAI/Api_node#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
